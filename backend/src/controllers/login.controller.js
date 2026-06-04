@@ -31,14 +31,7 @@ async function googleLogin(req, res) {
         let user =
             await userModel.findOne({ email });
 
-        if (user.isBlocked) {
-            return res.status(403).json({
 
-                message:
-                    'Your account has been blocked by admin'
-
-            })
-        }
         if (!user) {
 
             user =
@@ -57,6 +50,14 @@ async function googleLogin(req, res) {
                 });
         }
 
+        if (user.isBlocked) {
+            return res.status(403).json({
+
+                message:
+                    'Your account has been blocked by admin'
+
+            })
+        }
 
         const token =
             jwt.sign(
