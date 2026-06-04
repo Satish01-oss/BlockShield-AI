@@ -21,13 +21,7 @@ const Topbar = () => {
 
         {/* Mobile Menu */}
 
-        <button
-        type="button"
-        className="lg:hidden w-14 h-14 rounded-2xl bg-[#0f172a] border border-gray-800 flex items-center justify-center">
 
-          <Menu size={24} />
-
-        </button>
 
         {/* Search */}
 
