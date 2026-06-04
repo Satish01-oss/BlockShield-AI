@@ -13,10 +13,10 @@ const resetPasswordRoutes = require('./routes/resetPassword.route');
 const userRoutes = require('./routes/user.route');
 const fraud = require('./routes/fraud.route');
 const transactionRoutes = require('./routes/transaction.route');
-const app = express();
 
+const app = express();
 app.use(cors({
-    origin: true,
+    origin: `${process.env.CLIENT_URL}`,
     credentials: true
 }));
 app.use(express.json());
