@@ -1,6 +1,6 @@
 # BlockShield AI
 
-BlockShield AI is a Blockchain Fraud Detection Platform built using MERN Stack and Python Machine Learning.
+BlockShield AI is a Blockchain Fraud Detection Platform built using MERN Stack and Python Machine Learning Integration.
 
 ## Features
 
